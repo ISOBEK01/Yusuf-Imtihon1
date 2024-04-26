@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 550px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.header_top_content {
+    width: 100%;
+    height: 150px;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input_div {
+    width: 100%;
+    height: 35px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: green;
+    padding: 0px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.bi-x {
+    font-size: 20px;
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.form_btn {
+    width: 120px;
+    height: 35px;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.form_btn:hover {
+    color: green;
+    background-color: white;
+    border-color: green;
+    transition: .5s;
+}
+
+.all_delete_btn {
+    margin-top: 40px;
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    border: 1px solid transparent;
+
+}
+
+.all_delete_btn:hover {
+    color: red;
+    background-color: white;
+    border-color: red;
+    transition: .5s;
+}
+
+.task {
+    width: 100%;
+    height: 460px;
+    overflow: auto;
+
+}
+
+.task_name {
+    color: green;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_card {
+    width: 100%;
+    height: 150px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: bounce 0.5s;
+    position: relative;
+    /* background-color: dodgerblue; */
+    /* background-color: dodgerblue; */
+
+
+
+
+}
+
+.comp_btn {
+    width: 90px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: rgb(22, 153, 15);
+    border-color: transparent;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.comp_btn:hover {
+    background-color: transparent;
+    border: 1px solid rgb(22, 153, 15);
+    color: rgb(22, 153, 15);
+    transition: .5s;
+}
+
+.active {
+    width: 477px;
+
+    background-color: purple;
+    text-decoration: line-through red;
+    border-radius: 15px;
+    margin-left: 15px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+
+
+
+
+
+}
+
+.bi-check2-circle {
+    font-size: 20px;
+}
+
+.comp {
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: 20px;
+    background-color: gold;
+    border-color: transparent;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.comp:hover {
+    background-color: transparent;
+    border: 1px solid gold;
+    color: gold;
+    transition: .5s;
+}
+
+.bi-pencil-square {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.compe {
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 20px;
+    background-color: dodgerblue;
+    border-color: transparent;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.compe:hover {
+    background-color: transparent;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    transition: .5s;
+}
+
+.bi-alarm {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.compel {
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    margin-left: 355px;
+    margin-top: 20px;
+    background-color: rgb(246, 72, 72);
+    border-color: transparent;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.compel:hover {
+    background-color: transparent;
+    border: 1px solid rgb(246, 72, 72);
+    color: rgb(246, 72, 72);
+    transition: .5s;
+}
+
+.bi-trash3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+@keyframes bounce {
+    0% {
+        transform: scale(0);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(0.8);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
